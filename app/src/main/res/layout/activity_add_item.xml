@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/medium_margin">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_name_et"
+        android:hint="@string/product_name_text"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_price_et"
+        android:inputType="number"
+        android:hint="@string/price_string"
+        android:maxLength="7"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/item_quantity_et"
+        android:hint="@string/quantity_string"
+        android:maxLength="4"/>
+    <ImageView
+        android:layout_width="@dimen/large_size"
+        android:layout_height="@dimen/large_size"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/item_image_preview"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/select_image"
+        android:text="@string/add_image_text"/>
+
+
+</LinearLayout>
